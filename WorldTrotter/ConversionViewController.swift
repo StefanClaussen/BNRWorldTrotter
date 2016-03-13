@@ -11,7 +11,7 @@ import UIKit
 class ConversionViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet var celsiusLabel: UILabel!
-    @IBOutlet var textField: UITextField!
+    @IBOutlet weak var textField: UITextField!
     
     var fahrenheitValue: Double? {
         didSet {
@@ -63,6 +63,8 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func dismissKeyboard(sender: AnyObject) {
-        textField.resignFirstResponder()    
+        textField.resignFirstResponder()
     }
+    
+    
 }
