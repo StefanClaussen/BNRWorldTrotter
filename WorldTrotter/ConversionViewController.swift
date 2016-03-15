@@ -35,6 +35,12 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
         return nf
     }()
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        print("ConversionViewController loaded its view")
+    }
+    
     func updateCelsiusLabel() {
         if let value = celsiusValue {
             celsiusLabel.text = numberFormatter.stringFromNumber(value)

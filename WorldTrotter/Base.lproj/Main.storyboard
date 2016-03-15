@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eK0-Q8-l75">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
-        <!--Conversion View Controller-->
+        <!--Convert-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ConversionViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
@@ -80,6 +80,7 @@
                             <outletCollection property="gestureRecognizers" destination="3cK-eN-m0J" appends="YES" id="JO3-YY-WoP"/>
                         </connections>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Convert" image="ConvertIcon" id="XiN-0z-e0b"/>
                     <connections>
                         <outlet property="celsiusLabel" destination="K94-eb-8Xw" id="6aP-BU-zgz"/>
                         <outlet property="textField" destination="d71-4g-Oe8" id="fCk-6u-W3l"/>
@@ -94,5 +95,41 @@
             </objects>
             <point key="canvasLocation" x="315.5" y="372.5"/>
         </scene>
+        <!--Map-->
+        <scene sceneID="gTR-xk-qPz">
+            <objects>
+                <viewController id="OcD-6D-DEw" customClass="MapViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
+                    <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="v9Y-do-rYL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </mapView>
+                    <tabBarItem key="tabBarItem" title="Map" image="MapIcon" id="mPg-lw-68G"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eqd-tc-Kv3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1809" y="372"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="fK2-Ff-wUD">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="eK0-Q8-l75" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="ApD-zK-VB5">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Xgr-Ls-hN7"/>
+                        <segue destination="OcD-6D-DEw" kind="relationship" relationship="viewControllers" id="H99-O0-baa"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yfw-fe-yV0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="997" y="372"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="ConvertIcon" width="49" height="33"/>
+        <image name="MapIcon" width="49" height="33"/>
+    </resources>
 </document>
