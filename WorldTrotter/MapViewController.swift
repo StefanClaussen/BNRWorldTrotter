@@ -17,11 +17,14 @@ class MapViewController: UIViewController {
         mapView = MKMapView()
         view = mapView
         
-        let segmentedControl = UISegmentedControl(items: ["Standard", "Hybrid", "Satelite"])
+        let standardString = NSLocalizedString("Standard", comment: "Standard map view")
+        let sateliteString = NSLocalizedString("Satelite", comment: "Satelite map view")
+        let hybridString = NSLocalizedString("Hybrid", comment: "Hybrid map view")
+        
+        let segmentedControl = UISegmentedControl(items: [standardString, sateliteString, hybridString])
         segmentedControl.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.5)
         segmentedControl.selectedSegmentIndex = 0
         
-        // Add this line
         segmentedControl.addTarget(self, action: "mapTypeChanged:", forControlEvents: .ValueChanged)
         
         segmentedControl.translatesAutoresizingMaskIntoConstraints = false
@@ -43,7 +46,6 @@ class MapViewController: UIViewController {
         print("MapViewController loaded its view")
     }
     
-    // Add this method
     func mapTypeChanged(segControl: UISegmentedControl) {
         switch segControl.selectedSegmentIndex {
         case 0:

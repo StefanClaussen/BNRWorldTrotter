@@ -14,9 +14,12 @@
 		F8B066C31C831BC90094936A /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B066C21C831BC90094936A /* ConversionViewController.swift */; };
 		F8B558FD1C97EB5A00A667E7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B558FC1C97EB5A00A667E7 /* MapKit.framework */; };
 		F8B558FF1C98071B00A667E7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B558FE1C98071B00A667E7 /* MapViewController.swift */; };
+		F8CE6F981CC3966A00C3D762 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8CE6F9A1CC3966A00C3D762 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F857B4331CC387EC00D30111 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		F857B4341CC3887700D30111 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		F86F3E1B1C8191B300670923 /* WorldTrotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldTrotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F86F3E1E1C8191B300670923 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F86F3E231C8191B300670923 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -26,6 +29,9 @@
 		F8B066C21C831BC90094936A /* ConversionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversionViewController.swift; sourceTree = "<group>"; };
 		F8B558FC1C97EB5A00A667E7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		F8B558FE1C98071B00A667E7 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		F8CE6F991CC3966A00C3D762 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F8CE6F9B1CC3967100C3D762 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F8CE6F9C1CC3967200C3D762 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,7 @@
 		F86F3E1D1C8191B300670923 /* WorldTrotter */ = {
 			isa = PBXGroup;
 			children = (
+				F8CE6F9A1CC3966A00C3D762 /* Localizable.strings */,
 				F86F3E1E1C8191B300670923 /* AppDelegate.swift */,
 				F8B066C21C831BC90094936A /* ConversionViewController.swift */,
 				F8B558FE1C98071B00A667E7 /* MapViewController.swift */,
@@ -113,6 +120,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = F86F3E121C8191B300670923;
 			productRefGroup = F86F3E1C1C8191B300670923 /* Products */;
@@ -130,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F86F3E291C8191B300670923 /* LaunchScreen.storyboard in Resources */,
+				F8CE6F981CC3966A00C3D762 /* Localizable.strings in Resources */,
 				F86F3E261C8191B300670923 /* Assets.xcassets in Resources */,
 				F86F3E241C8191B300670923 /* Main.storyboard in Resources */,
 			);
@@ -155,6 +164,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				F86F3E231C8191B300670923 /* Base */,
+				F857B4331CC387EC00D30111 /* en */,
+				F857B4341CC3887700D30111 /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -165,6 +176,16 @@
 				F86F3E281C8191B300670923 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F8CE6F9A1CC3966A00C3D762 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8CE6F991CC3966A00C3D762 /* Base */,
+				F8CE6F9B1CC3967100C3D762 /* en */,
+				F8CE6F9C1CC3967200C3D762 /* es */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
